@@ -2,7 +2,7 @@
 platform :ios, '11.0'
 use_modular_headers!
 
-target 'KhrysalisBluetooth' do
-    pod 'Khrysalis', :path => '~/StudioProjects/khrysalis/khrysalis.podspec'
+target 'ButterflyBluetooth' do
+    pod 'Butterfly', :path => '~/StudioProjects/butterfly/butterfly.podspec'
     pod 'RxBluetoothKit'
 end
