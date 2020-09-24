@@ -1,15 +1,15 @@
 //
-//  KhrysalisBluetoothTests.swift
-//  KhrysalisBluetoothTests
+//  ButterflyBluetoothTests.swift
+//  ButterflyBluetoothTests
 //
 //  Created by Joseph Ivie on 1/24/20.
 //  Copyright © 2020 Lightning Kite. All rights reserved.
 //
 
 import XCTest
-@testable import KhrysalisBluetooth
+@testable import ButterflyBluetooth
 
-class KhrysalisBluetoothTests: XCTestCase {
+class ButterflyBluetoothTests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
