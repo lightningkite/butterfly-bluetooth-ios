@@ -18,34 +18,34 @@ public enum Ble {
     
     //--- Manager
     static let manager = CentralManager(queue: .main)
-    public static func managerOnceObs(_ viewDependency: ViewDependency) -> Observable<CentralManager> {
+    public static func managerOnceObs(_ ViewControllerAccess: ViewControllerAccess) -> Observable<CentralManager> {
         return Observable.just(manager)
     }
 
     //--- Ble.notificationDescriptorUuid
     public static var notificationDescriptorUuid: UUID = UUID.fromString("00002902-0000-1000-8000-00805f9b34fb")
 
-    //--- Ble.serve(ViewDependency, List<BleCharacteristicServer>, List<UUID>? , Float)
-    public static func serve(_ viewDependency: ViewDependency, _ characteristics: Array<BleCharacteristicServer>, _ serviceUuids: Array<UUID>? , _ advertisingIntensity: Float) -> BleServer {
+    //--- Ble.serve(ViewControllerAccess, List<BleCharacteristicServer>, List<UUID>? , Float)
+    public static func serve(_ ViewControllerAccess: ViewControllerAccess, _ characteristics: Array<BleCharacteristicServer>, _ serviceUuids: Array<UUID>? , _ advertisingIntensity: Float) -> BleServer {
         TODO()
     }
-    public static func serve(viewDependency: ViewDependency, characteristics: Array<BleCharacteristicServer>, serviceUuids: Array<UUID>? , advertisingIntensity: Float) -> BleServer {
-        return serve(viewDependency, characteristics, serviceUuids, advertisingIntensity)
+    public static func serve(ViewControllerAccess: ViewControllerAccess, characteristics: Array<BleCharacteristicServer>, serviceUuids: Array<UUID>? , advertisingIntensity: Float) -> BleServer {
+        return serve(ViewControllerAccess, characteristics, serviceUuids, advertisingIntensity)
     }
 
-    //--- Ble.scan(ViewDependency, List<UUID>, Float)
-    public static func scan(_ viewDependency: ViewDependency, _ withServices: Array<UUID> = [], _ intensity: Float = 0.5) -> Observable<BleScanResult> {
-        return managerOnceObs(viewDependency)
+    //--- Ble.scan(ViewControllerAccess, List<UUID>, Float)
+    public static func scan(_ ViewControllerAccess: ViewControllerAccess, _ withServices: Array<UUID> = [], _ intensity: Float = 0.5) -> Observable<BleScanResult> {
+        return managerOnceObs(ViewControllerAccess)
             .switchMap { manager in manager.scanForPeripherals(withServices: withServices.isEmpty ? nil : withServices.map { CBUUID(nsuuid: $0) }) }
             .map { it in BleScanResult(info: BleDeviceInfo(id: it.peripheral.identifier.uuidString, name: it.peripheral.name), rssi: Int32(it.rssi)) }
     }
-    public static func scan(viewDependency: ViewDependency, withServices: Array<UUID> = [], intensity: Float = 0.5) -> Observable<BleScanResult> {
-        return scan(viewDependency, withServices, intensity)
+    public static func scan(ViewControllerAccess: ViewControllerAccess, withServices: Array<UUID> = [], intensity: Float = 0.5) -> Observable<BleScanResult> {
+        return scan(ViewControllerAccess, withServices, intensity)
     }
 
-    //--- Ble.connect(ViewDependency, String)
-    public static func connect(_ viewDependency: ViewDependency, _ deviceId: String) -> Observable<BleConnection> {
-        return managerOnceObs(viewDependency)
+    //--- Ble.connect(ViewControllerAccess, String)
+    public static func connect(_ ViewControllerAccess: ViewControllerAccess, _ deviceId: String) -> Observable<BleConnection> {
+        return managerOnceObs(ViewControllerAccess)
             .flatMap { (manager) -> Observable<Peripheral> in
                 if let p = manager.retrievePeripherals(withIdentifiers: [UUID.fromString(deviceId)]).firstOrNull() {
                     return manager.establishConnection(p)
@@ -55,8 +55,8 @@ public enum Ble {
             }
         .map { it in BleConnectionImpl(peripheral: it) }
     }
-    public static func connect(viewDependency: ViewDependency, deviceId: String) -> Observable<BleConnection> {
-        return connect(viewDependency, deviceId)
+    public static func connect(ViewControllerAccess: ViewControllerAccess, deviceId: String) -> Observable<BleConnection> {
+        return connect(ViewControllerAccess, deviceId)
     }
 
     //--- Ble.} (overwritten on flow generation)
