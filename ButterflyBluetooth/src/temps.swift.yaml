@@ -1,0 +1,6 @@
+- id: com.lightningkite.butterfly.bluetooth.BleServer
+  type: type
+  template: Void
+- id: com.polidea.rxandroidble2.RxBleClient
+  type: type
+  template: Void
