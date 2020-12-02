@@ -5,8 +5,8 @@ import Butterfly
 import Foundation
 
 public class BleProfileDescription : KDataClass {
-    public var services: Map<UUID, BleServiceDescription>
-    public init(services: Map<UUID, BleServiceDescription>) {
+    public var services: Dictionary<UUID, BleServiceDescription>
+    public init(services: Dictionary<UUID, BleServiceDescription>) {
         self.services = services
         //Necessary properties should be initialized now
     }
@@ -15,13 +15,13 @@ public class BleProfileDescription : KDataClass {
     }
     public static func == (lhs: BleProfileDescription, rhs: BleProfileDescription) -> Bool { return lhs.services == rhs.services }
     public var description: String { return "BleProfileDescription(services = \(self.services))" }
-    public func copy(services: Map<UUID, BleServiceDescription>? = nil) -> BleProfileDescription { return BleProfileDescription(services: services ?? self.services) }
+    public func copy(services: Dictionary<UUID, BleServiceDescription>? = nil) -> BleProfileDescription { return BleProfileDescription(services: services ?? self.services) }
 }
 public class BleServiceDescription : KDataClass {
     public var debugName: String
-    public var primary: Boolean
-    public var characteristics: Map<UUID, BleCharacteristicDescription>
-    public init(debugName: String, primary: Boolean, characteristics: Map<UUID, BleCharacteristicDescription>) {
+    public var primary: Bool
+    public var characteristics: Dictionary<UUID, BleCharacteristicDescription>
+    public init(debugName: String, primary: Bool, characteristics: Dictionary<UUID, BleCharacteristicDescription>) {
         self.debugName = debugName
         self.primary = primary
         self.characteristics = characteristics
@@ -34,7 +34,7 @@ public class BleServiceDescription : KDataClass {
     }
     public static func == (lhs: BleServiceDescription, rhs: BleServiceDescription) -> Bool { return lhs.debugName == rhs.debugName && lhs.primary == rhs.primary && lhs.characteristics == rhs.characteristics }
     public var description: String { return "BleServiceDescription(debugName = \(self.debugName), primary = \(self.primary), characteristics = \(self.characteristics))" }
-    public func copy(debugName: String? = nil, primary: Boolean? = nil, characteristics: Map<UUID, BleCharacteristicDescription>? = nil) -> BleServiceDescription { return BleServiceDescription(debugName: debugName ?? self.debugName, primary: primary ?? self.primary, characteristics: characteristics ?? self.characteristics) }
+    public func copy(debugName: String? = nil, primary: Bool? = nil, characteristics: Dictionary<UUID, BleCharacteristicDescription>? = nil) -> BleServiceDescription { return BleServiceDescription(debugName: debugName ?? self.debugName, primary: primary ?? self.primary, characteristics: characteristics ?? self.characteristics) }
 }
 public class BleCharacteristicDescription : KDataClass {
     public var debugName: String
@@ -88,18 +88,18 @@ public class BleScanResult : KDataClass {
 }
 
 public class BleCharacteristicProperties : KDataClass {
-    public var broadcast: Boolean
-    public var read: Boolean
-    public var writeWithoutResponse: Boolean
-    public var write: Boolean
-    public var notify: Boolean
-    public var indicate: Boolean
-    public var authenticatedSignedWrites: Boolean
-    public var extendedProperties: Boolean
-    public var notifyEncryptionRequired: Boolean
-    public var indicateEncryptionRequired: Boolean
-    public var writeEncryptionRequired: Boolean
-    public init(broadcast: Boolean = false, read: Boolean = false, writeWithoutResponse: Boolean = false, write: Boolean = false, notify: Boolean = false, indicate: Boolean = false, authenticatedSignedWrites: Boolean = false, extendedProperties: Boolean = false, notifyEncryptionRequired: Boolean = false, indicateEncryptionRequired: Boolean = false, writeEncryptionRequired: Boolean = false) {
+    public var broadcast: Bool
+    public var read: Bool
+    public var writeWithoutResponse: Bool
+    public var write: Bool
+    public var notify: Bool
+    public var indicate: Bool
+    public var authenticatedSignedWrites: Bool
+    public var extendedProperties: Bool
+    public var notifyEncryptionRequired: Bool
+    public var indicateEncryptionRequired: Bool
+    public var writeEncryptionRequired: Bool
+    public init(broadcast: Bool = false, read: Bool = false, writeWithoutResponse: Bool = false, write: Bool = false, notify: Bool = false, indicate: Bool = false, authenticatedSignedWrites: Bool = false, extendedProperties: Bool = false, notifyEncryptionRequired: Bool = false, indicateEncryptionRequired: Bool = false, writeEncryptionRequired: Bool = false) {
         self.broadcast = broadcast
         self.read = read
         self.writeWithoutResponse = writeWithoutResponse
@@ -128,7 +128,7 @@ public class BleCharacteristicProperties : KDataClass {
     }
     public static func == (lhs: BleCharacteristicProperties, rhs: BleCharacteristicProperties) -> Bool { return lhs.broadcast == rhs.broadcast && lhs.read == rhs.read && lhs.writeWithoutResponse == rhs.writeWithoutResponse && lhs.write == rhs.write && lhs.notify == rhs.notify && lhs.indicate == rhs.indicate && lhs.authenticatedSignedWrites == rhs.authenticatedSignedWrites && lhs.extendedProperties == rhs.extendedProperties && lhs.notifyEncryptionRequired == rhs.notifyEncryptionRequired && lhs.indicateEncryptionRequired == rhs.indicateEncryptionRequired && lhs.writeEncryptionRequired == rhs.writeEncryptionRequired }
     public var description: String { return "BleCharacteristicProperties(broadcast = \(self.broadcast), read = \(self.read), writeWithoutResponse = \(self.writeWithoutResponse), write = \(self.write), notify = \(self.notify), indicate = \(self.indicate), authenticatedSignedWrites = \(self.authenticatedSignedWrites), extendedProperties = \(self.extendedProperties), notifyEncryptionRequired = \(self.notifyEncryptionRequired), indicateEncryptionRequired = \(self.indicateEncryptionRequired), writeEncryptionRequired = \(self.writeEncryptionRequired))" }
-    public func copy(broadcast: Boolean? = nil, read: Boolean? = nil, writeWithoutResponse: Boolean? = nil, write: Boolean? = nil, notify: Boolean? = nil, indicate: Boolean? = nil, authenticatedSignedWrites: Boolean? = nil, extendedProperties: Boolean? = nil, notifyEncryptionRequired: Boolean? = nil, indicateEncryptionRequired: Boolean? = nil, writeEncryptionRequired: Boolean? = nil) -> BleCharacteristicProperties { return BleCharacteristicProperties(broadcast: broadcast ?? self.broadcast, read: read ?? self.read, writeWithoutResponse: writeWithoutResponse ?? self.writeWithoutResponse, write: write ?? self.write, notify: notify ?? self.notify, indicate: indicate ?? self.indicate, authenticatedSignedWrites: authenticatedSignedWrites ?? self.authenticatedSignedWrites, extendedProperties: extendedProperties ?? self.extendedProperties, notifyEncryptionRequired: notifyEncryptionRequired ?? self.notifyEncryptionRequired, indicateEncryptionRequired: indicateEncryptionRequired ?? self.indicateEncryptionRequired, writeEncryptionRequired: writeEncryptionRequired ?? self.writeEncryptionRequired) }
+    public func copy(broadcast: Bool? = nil, read: Bool? = nil, writeWithoutResponse: Bool? = nil, write: Bool? = nil, notify: Bool? = nil, indicate: Bool? = nil, authenticatedSignedWrites: Bool? = nil, extendedProperties: Bool? = nil, notifyEncryptionRequired: Bool? = nil, indicateEncryptionRequired: Bool? = nil, writeEncryptionRequired: Bool? = nil) -> BleCharacteristicProperties { return BleCharacteristicProperties(broadcast: broadcast ?? self.broadcast, read: read ?? self.read, writeWithoutResponse: writeWithoutResponse ?? self.writeWithoutResponse, write: write ?? self.write, notify: notify ?? self.notify, indicate: indicate ?? self.indicate, authenticatedSignedWrites: authenticatedSignedWrites ?? self.authenticatedSignedWrites, extendedProperties: extendedProperties ?? self.extendedProperties, notifyEncryptionRequired: notifyEncryptionRequired ?? self.notifyEncryptionRequired, indicateEncryptionRequired: indicateEncryptionRequired ?? self.indicateEncryptionRequired, writeEncryptionRequired: writeEncryptionRequired ?? self.writeEncryptionRequired) }
 }
 
 public class BleResponseException : Exception {
