@@ -4,11 +4,11 @@ platform :ios, '11.0'
 use_frameworks!
 
 target 'ButterflyBluetooth' do
-    pod 'LKButterfly', :path => '../butterfly-ios/LKButterfly.podspec'
+    pod 'LKButterfly'
     pod 'RxBluetoothKit'
 end
 
 target 'ButterflyBluetoothTests' do
-    pod 'LKButterfly', :path => '../butterfly-ios/LKButterfly.podspec'
+    pod 'LKButterfly'
     pod 'RxBluetoothKit'
 end

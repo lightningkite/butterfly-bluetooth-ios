@@ -90,7 +90,7 @@ PODS:
   - "UITextView+Placeholder (1.4.0)"
 
 DEPENDENCIES:
-  - LKButterfly (from `../butterfly-ios/LKButterfly.podspec`)
+  - LKButterfly
   - RxBluetoothKit
 
 SPEC REPOS:
@@ -102,16 +102,13 @@ SPEC REPOS:
     - DKImagePickerController
     - IBPCollectionViewCompositionalLayout
     - KeychainAccess
+    - LKButterfly
     - RxBluetoothKit
     - RxRelay
     - RxSwift
     - SearchTextField
     - Starscream
     - "UITextView+Placeholder"
-
-EXTERNAL SOURCES:
-  LKButterfly:
-    :path: "../butterfly-ios/LKButterfly.podspec"
 
 SPEC CHECKSUMS:
   Alamofire: 2291f7d21ca607c491dd17642e5d40fdcda0e65c
@@ -129,6 +126,6 @@ SPEC CHECKSUMS:
   Starscream: 5178aed56b316f13fa3bc55694e583d35dd414d9
   "UITextView+Placeholder": d7b0c400921f66523f3a85d74f774512e14f6502
 
-PODFILE CHECKSUM: f7c87e030a649d6c5a46dd1217d5d3ae0979dff0
+PODFILE CHECKSUM: 520f65e6e6634df13f966950c3f68cf7eeccfa9b
 
 COCOAPODS: 1.10.1
