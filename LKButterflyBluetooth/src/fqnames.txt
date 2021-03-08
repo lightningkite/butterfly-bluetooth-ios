@@ -1,4 +1,4 @@
-ButterflyBluetooth
+LKButterflyBluetooth
 com.lightningkite.butterfly.bluetooth.activityAccessBle
 com.lightningkite.butterfly.bluetooth.ble
 com.lightningkite.butterfly.bluetooth.activateBluetoothDialog

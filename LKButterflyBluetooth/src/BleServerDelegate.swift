@@ -2,8 +2,8 @@
 // File: BleServerDelegate.kt
 // Package: com.lightningkite.butterfly.bluetooth
 import RxSwift
-import Butterfly
 import Foundation
+import LKButterfly
 
 public protocol BleServerDelegate: AnyObject, Disposable {
     

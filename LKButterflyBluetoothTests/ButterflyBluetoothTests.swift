@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import ButterflyBluetooth
+@testable import LKButterflyBluetooth
 
 class ButterflyBluetoothTests: XCTestCase {
 

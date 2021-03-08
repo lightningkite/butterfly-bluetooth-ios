@@ -1,5 +1,5 @@
-import Butterfly
 import RxSwift
+import LKButterfly
 
 public extension ViewControllerAccess {
     var ble: Single<RxBleClient> {

@@ -1,8 +1,14 @@
 
 platform :ios, '11.0'
-use_modular_headers!
 
-target 'ButterflyBluetooth' do
-    pod 'Butterfly', :path => '../butterfly-ios/Butterfly.podspec'
+use_frameworks!
+
+target 'LKButterflyBluetooth' do
+    pod 'LKButterfly'
+    pod 'RxBluetoothKit'
+end
+
+target 'LKButterflyBluetoothTests' do
+    pod 'LKButterfly'
     pod 'RxBluetoothKit'
 end
