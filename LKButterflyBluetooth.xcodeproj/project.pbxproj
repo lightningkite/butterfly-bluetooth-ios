@@ -17,7 +17,7 @@
 		23FB260925F2F1A600B320FF /* temps.swift.yaml in Sources */ = {isa = PBXBuildFile; fileRef = 23FB22D425F2BDD400B320FF /* temps.swift.yaml */; };
 		23FB260A25F2F1A600B320FF /* fqnames.txt in Sources */ = {isa = PBXBuildFile; fileRef = 23FB22D525F2BDD400B320FF /* fqnames.txt */; };
 		23FB260E25F2F1EC00B320FF /* ButterflyBluetoothTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE8E82023DB8B4800A6D468 /* ButterflyBluetoothTests.swift */; };
-		5EE8E81C23DB8B4800A6D468 /* ButterflyBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EE8E81223DB8B4800A6D468 /* ButterflyBluetooth.framework */; };
+		5EE8E81C23DB8B4800A6D468 /* LKButterflyBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EE8E81223DB8B4800A6D468 /* LKButterflyBluetooth.framework */; };
 		770A3D99219B34633F40E8C5 /* Pods_ButterflyBluetoothTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A94964C5DCB48255C35C3D70 /* Pods_ButterflyBluetoothTests.framework */; };
 		F8DFA790C88E8FDAE6D67F1C /* Pods_ButterflyBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9444EA5DFF95E7327D955A5D /* Pods_ButterflyBluetooth.framework */; };
 /* End PBXBuildFile section */
@@ -44,8 +44,8 @@
 		23FB22D525F2BDD400B320FF /* fqnames.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fqnames.txt; sourceTree = "<group>"; };
 		23FB22D625F2BDD400B320FF /* ButterflyBluetooth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButterflyBluetooth.h; sourceTree = "<group>"; };
 		23FB22DC25F2BDD400B320FF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5EE8E81223DB8B4800A6D468 /* ButterflyBluetooth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ButterflyBluetooth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5EE8E81B23DB8B4800A6D468 /* ButterflyBluetoothTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ButterflyBluetoothTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EE8E81223DB8B4800A6D468 /* LKButterflyBluetooth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LKButterflyBluetooth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EE8E81B23DB8B4800A6D468 /* LKButterflyBluetoothTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LKButterflyBluetoothTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EE8E82023DB8B4800A6D468 /* ButterflyBluetoothTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButterflyBluetoothTests.swift; sourceTree = "<group>"; };
 		5EE8E82223DB8B4800A6D468 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		797B11F3AF90E0801F9D04B7 /* Pods-ButterflyBluetoothTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ButterflyBluetoothTests.debug.xcconfig"; path = "Target Support Files/Pods-ButterflyBluetoothTests/Pods-ButterflyBluetoothTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -68,7 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5EE8E81C23DB8B4800A6D468 /* ButterflyBluetooth.framework in Frameworks */,
+				5EE8E81C23DB8B4800A6D468 /* LKButterflyBluetooth.framework in Frameworks */,
 				770A3D99219B34633F40E8C5 /* Pods_ButterflyBluetoothTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -94,8 +94,8 @@
 		5EE8E80823DB8B4800A6D468 = {
 			isa = PBXGroup;
 			children = (
-				5EE8E81423DB8B4800A6D468 /* ButterflyBluetooth */,
-				5EE8E81F23DB8B4800A6D468 /* ButterflyBluetoothTests */,
+				5EE8E81423DB8B4800A6D468 /* LKButterflyBluetooth */,
+				5EE8E81F23DB8B4800A6D468 /* LKButterflyBluetoothTests */,
 				5EE8E81323DB8B4800A6D468 /* Products */,
 				AC8E1F8D6FF5C2B54E788475 /* Pods */,
 				C66DFCCDC70B76453CDC9461 /* Frameworks */,
@@ -105,29 +105,29 @@
 		5EE8E81323DB8B4800A6D468 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5EE8E81223DB8B4800A6D468 /* ButterflyBluetooth.framework */,
-				5EE8E81B23DB8B4800A6D468 /* ButterflyBluetoothTests.xctest */,
+				5EE8E81223DB8B4800A6D468 /* LKButterflyBluetooth.framework */,
+				5EE8E81B23DB8B4800A6D468 /* LKButterflyBluetoothTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5EE8E81423DB8B4800A6D468 /* ButterflyBluetooth */ = {
+		5EE8E81423DB8B4800A6D468 /* LKButterflyBluetooth */ = {
 			isa = PBXGroup;
 			children = (
 				23FB22D625F2BDD400B320FF /* ButterflyBluetooth.h */,
 				23FB22DC25F2BDD400B320FF /* Info.plist */,
 				23FB22CD25F2BDD400B320FF /* src */,
 			);
-			path = ButterflyBluetooth;
+			path = LKButterflyBluetooth;
 			sourceTree = "<group>";
 		};
-		5EE8E81F23DB8B4800A6D468 /* ButterflyBluetoothTests */ = {
+		5EE8E81F23DB8B4800A6D468 /* LKButterflyBluetoothTests */ = {
 			isa = PBXGroup;
 			children = (
 				5EE8E82023DB8B4800A6D468 /* ButterflyBluetoothTests.swift */,
 				5EE8E82223DB8B4800A6D468 /* Info.plist */,
 			);
-			path = ButterflyBluetoothTests;
+			path = LKButterflyBluetoothTests;
 			sourceTree = "<group>";
 		};
 		AC8E1F8D6FF5C2B54E788475 /* Pods */ = {
@@ -164,9 +164,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		5EE8E81123DB8B4800A6D468 /* ButterflyBluetooth */ = {
+		5EE8E81123DB8B4800A6D468 /* LKButterflyBluetooth */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5EE8E82623DB8B4800A6D468 /* Build configuration list for PBXNativeTarget "ButterflyBluetooth" */;
+			buildConfigurationList = 5EE8E82623DB8B4800A6D468 /* Build configuration list for PBXNativeTarget "LKButterflyBluetooth" */;
 			buildPhases = (
 				47C9345E9D6889EE88676CFB /* [CP] Check Pods Manifest.lock */,
 				5EE8E80D23DB8B4800A6D468 /* Headers */,
@@ -177,14 +177,14 @@
 			);
 			dependencies = (
 			);
-			name = ButterflyBluetooth;
+			name = LKButterflyBluetooth;
 			productName = ButterflyBluetooth;
-			productReference = 5EE8E81223DB8B4800A6D468 /* ButterflyBluetooth.framework */;
+			productReference = 5EE8E81223DB8B4800A6D468 /* LKButterflyBluetooth.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		5EE8E81A23DB8B4800A6D468 /* ButterflyBluetoothTests */ = {
+		5EE8E81A23DB8B4800A6D468 /* LKButterflyBluetoothTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5EE8E82923DB8B4800A6D468 /* Build configuration list for PBXNativeTarget "ButterflyBluetoothTests" */;
+			buildConfigurationList = 5EE8E82923DB8B4800A6D468 /* Build configuration list for PBXNativeTarget "LKButterflyBluetoothTests" */;
 			buildPhases = (
 				5D065BFF141FB9247ACD90F3 /* [CP] Check Pods Manifest.lock */,
 				23FB260D25F2F1E200B320FF /* Sources */,
@@ -196,9 +196,9 @@
 			dependencies = (
 				5EE8E81E23DB8B4800A6D468 /* PBXTargetDependency */,
 			);
-			name = ButterflyBluetoothTests;
+			name = LKButterflyBluetoothTests;
 			productName = ButterflyBluetoothTests;
-			productReference = 5EE8E81B23DB8B4800A6D468 /* ButterflyBluetoothTests.xctest */;
+			productReference = 5EE8E81B23DB8B4800A6D468 /* LKButterflyBluetoothTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -219,7 +219,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 5EE8E80C23DB8B4800A6D468 /* Build configuration list for PBXProject "ButterflyBluetooth" */;
+			buildConfigurationList = 5EE8E80C23DB8B4800A6D468 /* Build configuration list for PBXProject "LKButterflyBluetooth" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -232,8 +232,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5EE8E81123DB8B4800A6D468 /* ButterflyBluetooth */,
-				5EE8E81A23DB8B4800A6D468 /* ButterflyBluetoothTests */,
+				5EE8E81123DB8B4800A6D468 /* LKButterflyBluetooth */,
+				5EE8E81A23DB8B4800A6D468 /* LKButterflyBluetoothTests */,
 			);
 		};
 /* End PBXProject section */
@@ -331,7 +331,7 @@
 /* Begin PBXTargetDependency section */
 		5EE8E81E23DB8B4800A6D468 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5EE8E81123DB8B4800A6D468 /* ButterflyBluetooth */;
+			target = 5EE8E81123DB8B4800A6D468 /* LKButterflyBluetooth */;
 			targetProxy = 5EE8E81D23DB8B4800A6D468 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -467,14 +467,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = ButterflyBluetooth/Info.plist;
+				INFOPLIST_FILE = LKButterflyBluetooth/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.lightningkite.ButterflyBluetooth;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lightningkite.LKButterflyBluetooth;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -492,14 +492,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = ButterflyBluetooth/Info.plist;
+				INFOPLIST_FILE = LKButterflyBluetooth/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.lightningkite.ButterflyBluetooth;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lightningkite.LKButterflyBluetooth;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -514,13 +514,13 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EF4N5K3F2Q;
-				INFOPLIST_FILE = ButterflyBluetoothTests/Info.plist;
+				INFOPLIST_FILE = LKButterflyBluetoothTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.lightningkite.ButterflyBluetoothTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lightningkite.LKButterflyBluetoothTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -534,13 +534,13 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EF4N5K3F2Q;
-				INFOPLIST_FILE = ButterflyBluetoothTests/Info.plist;
+				INFOPLIST_FILE = LKButterflyBluetoothTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.lightningkite.ButterflyBluetoothTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lightningkite.LKButterflyBluetoothTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -550,7 +550,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5EE8E80C23DB8B4800A6D468 /* Build configuration list for PBXProject "ButterflyBluetooth" */ = {
+		5EE8E80C23DB8B4800A6D468 /* Build configuration list for PBXProject "LKButterflyBluetooth" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5EE8E82423DB8B4800A6D468 /* Debug */,
@@ -559,7 +559,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5EE8E82623DB8B4800A6D468 /* Build configuration list for PBXNativeTarget "ButterflyBluetooth" */ = {
+		5EE8E82623DB8B4800A6D468 /* Build configuration list for PBXNativeTarget "LKButterflyBluetooth" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5EE8E82723DB8B4800A6D468 /* Debug */,
@@ -568,7 +568,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5EE8E82923DB8B4800A6D468 /* Build configuration list for PBXNativeTarget "ButterflyBluetoothTests" */ = {
+		5EE8E82923DB8B4800A6D468 /* Build configuration list for PBXNativeTarget "LKButterflyBluetoothTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5EE8E82A23DB8B4800A6D468 /* Debug */,

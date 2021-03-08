@@ -3,12 +3,12 @@ platform :ios, '11.0'
 
 use_frameworks!
 
-target 'ButterflyBluetooth' do
+target 'LKButterflyBluetooth' do
     pod 'LKButterfly'
     pod 'RxBluetoothKit'
 end
 
-target 'ButterflyBluetoothTests' do
+target 'LKButterflyBluetoothTests' do
     pod 'LKButterfly'
     pod 'RxBluetoothKit'
 end

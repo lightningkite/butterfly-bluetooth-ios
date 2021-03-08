@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "5EE8E81123DB8B4800A6D468"
-               BuildableName = "ButterflyBluetooth.framework"
-               BlueprintName = "ButterflyBluetooth"
-               ReferencedContainer = "container:ButterflyBluetooth.xcodeproj">
+               BuildableName = "LKButterflyBluetooth.framework"
+               BlueprintName = "LKButterflyBluetooth"
+               ReferencedContainer = "container:LKButterflyBluetooth.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "5EE8E81A23DB8B4800A6D468"
-               BuildableName = "ButterflyBluetoothTests.xctest"
-               BlueprintName = "ButterflyBluetoothTests"
-               ReferencedContainer = "container:ButterflyBluetooth.xcodeproj">
+               BuildableName = "LKButterflyBluetoothTests.xctest"
+               BlueprintName = "LKButterflyBluetoothTests"
+               ReferencedContainer = "container:LKButterflyBluetooth.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -61,9 +61,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5EE8E81123DB8B4800A6D468"
-            BuildableName = "ButterflyBluetooth.framework"
-            BlueprintName = "ButterflyBluetooth"
-            ReferencedContainer = "container:ButterflyBluetooth.xcodeproj">
+            BuildableName = "LKButterflyBluetooth.framework"
+            BlueprintName = "LKButterflyBluetooth"
+            ReferencedContainer = "container:LKButterflyBluetooth.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>
