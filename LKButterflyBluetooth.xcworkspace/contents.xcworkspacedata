@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/brady/Documents/butterfly-bluetooth-ios/LKButterflyBluetooth.xcodeproj">
+      location = "group:LKButterflyBluetooth.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
