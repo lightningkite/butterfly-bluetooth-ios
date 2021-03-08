@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		23FB22E525F2BDD400B320FF /* ButterflyBluetooth.h in Headers */ = {isa = PBXBuildFile; fileRef = 23FB22D625F2BDD400B320FF /* ButterflyBluetooth.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23FB22E525F2BDD400B320FF /* LKButterflyBluetooth.h in Headers */ = {isa = PBXBuildFile; fileRef = 23FB22D625F2BDD400B320FF /* LKButterflyBluetooth.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		23FB260325F2F1A600B320FF /* BleServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FB22CE25F2BDD400B320FF /* BleServer.swift */; };
 		23FB260425F2F1A600B320FF /* BleServerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FB22CF25F2BDD400B320FF /* BleServerDelegate.swift */; };
 		23FB260525F2F1A600B320FF /* ViewControllerAccess.bluetooth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FB22D025F2BDD400B320FF /* ViewControllerAccess.bluetooth.swift */; };
@@ -42,7 +42,7 @@
 		23FB22D325F2BDD400B320FF /* typealiases.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = typealiases.swift; sourceTree = "<group>"; };
 		23FB22D425F2BDD400B320FF /* temps.swift.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = temps.swift.yaml; sourceTree = "<group>"; };
 		23FB22D525F2BDD400B320FF /* fqnames.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fqnames.txt; sourceTree = "<group>"; };
-		23FB22D625F2BDD400B320FF /* ButterflyBluetooth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButterflyBluetooth.h; sourceTree = "<group>"; };
+		23FB22D625F2BDD400B320FF /* LKButterflyBluetooth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKButterflyBluetooth.h; sourceTree = "<group>"; };
 		23FB22DC25F2BDD400B320FF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5C676A645201CFF9C37E70F5 /* Pods-LKButterflyBluetoothTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LKButterflyBluetoothTests.debug.xcconfig"; path = "Target Support Files/Pods-LKButterflyBluetoothTests/Pods-LKButterflyBluetoothTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5E3C0377FE323E4029814573 /* Pods_LKButterflyBluetooth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LKButterflyBluetooth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -118,7 +118,7 @@
 		5EE8E81423DB8B4800A6D468 /* LKButterflyBluetooth */ = {
 			isa = PBXGroup;
 			children = (
-				23FB22D625F2BDD400B320FF /* ButterflyBluetooth.h */,
+				23FB22D625F2BDD400B320FF /* LKButterflyBluetooth.h */,
 				23FB22DC25F2BDD400B320FF /* Info.plist */,
 				23FB22CD25F2BDD400B320FF /* src */,
 			);
@@ -165,7 +165,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23FB22E525F2BDD400B320FF /* ButterflyBluetooth.h in Headers */,
+				23FB22E525F2BDD400B320FF /* LKButterflyBluetooth.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
