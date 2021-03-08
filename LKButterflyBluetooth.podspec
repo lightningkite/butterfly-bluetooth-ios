@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name = "ButterflyBluetooth"
+  s.name = "LKButterflyBluetooth"
   s.version = "0.2.0"
   s.summary = "Bluetooth for Butterfly"
   s.description = "Shared code for bluetooth using Butterfly.  This is the iOS portion."
@@ -17,6 +17,6 @@ Pod::Spec.new do |s|
   s.swift_version = '5.3'
   s.xcconfig = { 'SWIFT_VERSION' => '5.3' }
   # Dependency on Butterfly not representable at the moment
-  s.dependency "Butterfly/Core"
+  s.dependency "LKButterfly/Core"
   s.dependency "RxBluetoothKit"
 end
